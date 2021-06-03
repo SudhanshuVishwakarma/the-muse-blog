@@ -1,15 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const about =() => {
+function Blogpost() {
     return (
-        
+        <div>
             <Layout>
-            <h1>About page here</h1>
+                This is the blog templates
             </Layout>
-           
-        
+        </div>
     )
 }
 
-export default about
+export default Blogpost
