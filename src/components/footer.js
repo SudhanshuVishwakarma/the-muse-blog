@@ -1,10 +1,11 @@
 import React from 'react'
+import {footer} from './footer.module.scss'
 
 const Footer = () => {
     return (
-        <div>
-            created by twin monkeys
-        </div>
+      <footer className={footer}>
+      <p>created by twin monkeys</p>
+      </footer>
     )
 }
 
