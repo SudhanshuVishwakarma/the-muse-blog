@@ -1,0 +1,40 @@
+footer {
+  padding: 15px;
+  font-family: SF Pro Display;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  line-height: 0.1;
+}
+
+footer h2,
+footer h3,
+footer h4,
+footer p {
+  font-family: SF Pro Display;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+footer h2 {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-weight: 700;
+}
+
+footer h2:hover {
+  letter-spacing: 1.1px;
+}
+
+footer h4 {
+  margin-top: 20px;
+  font-weight: 200;
+}
+/*# sourceMappingURL=footer.module.css.map */

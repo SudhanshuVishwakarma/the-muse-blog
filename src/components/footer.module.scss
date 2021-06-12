@@ -1,3 +1,43 @@
-.footer{
-    margin-top: 3rem;
+footer {
+  //   margin-top: 1rem;
+  //   margin: 0;
+  padding: 10px;
+  font-family: SF Pro Display;
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+  line-height: 0.1;
+  // position: sticky;
+  // position: -webkit-sticky;
+  // bottom: 0;
+
+  h2,
+  h3,
+  h4{
+    // padding-bottom: 0px;
+    font-family: SF Pro Display;
+  }
+
+ 
+  h2 {
+    // text-decoration: underline;
+    // transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    font-weight: 700;
+    font-family: SF Pro Display;
+
+  }
+
+  h2:hover {
+    letter-spacing: 1.1px;
+    // overflow: hidden;
+  }
+
+  h4 {
+    // margin-top: 15px;
+    font-weight: 200;
+    font-family: SF Pro Display;
+
+  }
 }

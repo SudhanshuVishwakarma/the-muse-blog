@@ -1,0 +1,60 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main h4 {
+  font-family: SF Pro Display;
+  font-size: 3em;
+  margin: 20px;
+  text-align: center;
+}
+
+.posts {
+  list-style-type: none;
+  font-family: SF Pro Display;
+  margin: 0;
+}
+
+.post {
+  margin: 1rem 0;
+}
+
+.post a {
+  background: #f2f2f6;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+.post a:hover {
+  background: #d6d4d4;
+}
+
+.post a:before {
+  opacity: 1;
+}
+
+.post a .post {
+  opacity: 1;
+}
+
+.post h2 {
+  margin-bottom: 0;
+}
+
+.post p {
+  color: #272727;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+/*# sourceMappingURL=blog.module.css.map */

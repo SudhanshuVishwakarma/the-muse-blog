@@ -1,0 +1,25 @@
+.blog {
+//   border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  //   justify-content: center;
+
+  .header {
+    // border: 1px solid rgb(255, 0, 0);
+    margin: 1% 12% 0% 12%;
+
+    h1 {
+      font-family: SF Pro Display;
+      font-weight: 400;
+    }
+  }
+
+  .main_content {
+    // padding: 0 50px;
+    margin: 5% 12% 10% 12%;
+    // border: 1px solid sandybrown;
+    text-align: justify;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,217 @@
+:root {
+  --header-height: 3rem;
+  --first-color: #ffffff;
+  --first-color-dark: #c5c5c5;
+  --first-color-darken: rgb(252, 71, 107);
+  --white-color: #000000;
+  --body-font: SF pro Display;
+  --big-font-size: 2.5rem;
+  --normal-font-size: 0.938rem;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+}
+
+.home {
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+
+.home__container {
+  height: calc(100vh - var(--header-height));
+  -ms-grid-rows: (max-content)[2];
+      grid-template-rows: repeat(2, -webkit-max-content);
+      grid-template-rows: repeat(2, max-content);
+  row-gap: 1.5rem;
+}
+
+.home__img {
+  position: relative;
+  padding-top: 1.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 311px;
+  height: 326px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.home__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__data {
+  color: var(--white-color);
+}
+
+.home__title {
+  font-size: var(--big-font-size);
+  font-weight: 580;
+  font-family: SF Pro Display;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-top: 2em;
+  margin-bottom: 2.8rem;
+}
+
+.home__button {
+  display: inline-block;
+  border: 1px solid #252525;
+  color: var(--white-color);
+  padding: 1.125rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home__button:hover {
+  background-color: var(--first-color-darken);
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .home__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home__data {
+    text-align: center;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .home__container {
+    height: 100vh;
+    -ms-grid-columns: (max-content)[2];
+        grid-template-columns: repeat(2, -webkit-max-content);
+        grid-template-columns: repeat(2, max-content);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    row-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 375px;
+    height: 85%;
+  }
+  .home__img img {
+    width: 375px;
+  }
+  .home__title {
+    font-size: 4rem;
+  }
+  .home__data {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__container {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-column-gap: 4.5rem;
+            column-gap: 4.5rem;
+  }
+  .home__img {
+    width: 604px;
+    height: 90%;
+  }
+  .home__data {
+    height: 70%;
+  }
+  .home__img img {
+    width: 604px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
